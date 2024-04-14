@@ -12,8 +12,7 @@ Funkcionalumas:
 [x]Galimybe tam paciam vartotojui tureti daugiau nei viena komentara
 [x]Laiko loginimas kada buvo parasytas komentaras
 [x]Komentaru atvaizdavimo loopas
-[]Atvaizdavimo issaugojimas local storage
-  -neteisingai setinu ir getinu greiciausiai
+[x]Atvaizdavimo issaugojimas local storage
 [x]Atvaizduojamos korteles sukurimas naudojant komentara, varda, komentaro laika
 [x]Blogu zodziu sarasas
 [x]Blogu zodziu paieska su regex
