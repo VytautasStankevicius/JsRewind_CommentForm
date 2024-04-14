@@ -10,17 +10,17 @@ Funkcionalumas:
 [x]Vartotojo issaugojimas
 [x]Vartotojo komentaro issaugojimas
 [x]Galimybe tam paciam vartotojui tureti daugiau nei viena komentara
-[?]Laiko loginimas kada buvo parasytas komentaras
-    -laika rodo visada dabartini nors turetu buti snapshotas
-[]Komentaru atvaizdavimo loopas
+[x]Laiko loginimas kada buvo parasytas komentaras
+[x]Komentaru atvaizdavimo loopas
 []Atvaizdavimo issaugojimas local storage
-[]Atvaizduojamos korteles sukurimas naudojant komentara, varda, komentaro laika
-[]Blogu zodziu sarasas
-[]Blogu zodziu paieska su regex
-[]Banned vartotoju sarasas
-[]Banno pritaikymas vartotojui jeigu jis naudoja zodzius is banned saraso
-[]Tikrinimas ar vartotojas banned po username submitinimo
-[]Alertas banintam vartotojui su ispejimu kokiam laikui banas ir funkcionalumo nutraukimas
+  -neteisingai setinu ir getinu greiciausiai
+[x]Atvaizduojamos korteles sukurimas naudojant komentara, varda, komentaro laika
+[x]Blogu zodziu sarasas
+[x]Blogu zodziu paieska su regex
+[x]Banned vartotoju sarasas
+[x]Banno pritaikymas vartotojui jeigu jis naudoja zodzius is banned saraso
+[x]Tikrinimas ar vartotojas banned po username submitinimo
+[x]Alertas banintam vartotojui su ispejimu kokiam laikui banas ir funkcionalumo nutraukimas
 []
 []
 []
