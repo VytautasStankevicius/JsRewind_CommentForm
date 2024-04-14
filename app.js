@@ -2,18 +2,17 @@ const badWords = ['banana', 'watermelon', 'apple'];
 const bannedUser = []; 
 
 function getDateTime() {
-    const today = new Date();
-    const date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-    const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    return date + ' ' + time;
+    return new Date().toLocaleString('lt-lt')
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    let comments = {}
+    console.log('asd')
     const storedComments = localStorage.getItem('comments');
     if (storedComments) {
         comments = JSON.parse(storedComments);
     }
-    displayComments();
+    displayComments(comments);
 });
 
 function submitComment() {
@@ -33,7 +32,11 @@ function submitComment() {
     }
 
     const commentWrap = {comment: comment, dateTime: getDateTime()};
-    
+    const lsComments = localStorage.getItem('comments') 
+    let comments = {}
+    if (lsComments){
+        comments=JSON.parse(lsComments)
+    }
     if (comments[username]) {
         comments[username].push(commentWrap);
     } else {
@@ -41,12 +44,12 @@ function submitComment() {
     }
 
     document.getElementById('comment').value = '';
-    displayComments();
+    displayComments(comments);
     localStorage.setItem('comments', JSON.stringify(comments));
     console.log(comments)
 }
 
-function displayComments() {
+function displayComments(comments) {
     const container = document.getElementById('commentHolder');
     container.innerHTML = '';
 
@@ -59,6 +62,4 @@ function displayComments() {
         });
     }
 }
-
-console.log(bannedUser)
 
