@@ -24,6 +24,23 @@ function submitComment() {
         return;
     }
 
+    const usernameRegex = /^[a-z]{3,10}$/ig;
+    if (!usernameRegex.test(username)) {
+        alert('Username requirements:\n*can only contain letters from a to z,\n*length must be from 3 to 10 letters in length');
+        return;
+    }
+
+    if (comment.length > 255) {
+        alert('Comment can only contain up to 255 letters');
+        return;
+    }
+
+    const commentNoHtmlRegex = /<[^>]>/ig;
+    if (commentNoHtmlRegex.test(comment)) {
+        alert('External html code is forbidden.');
+        return;
+    }
+
     const badWordRegex = new RegExp(badWords.join('|'), 'i');
     if (badWordRegex.test(comment)) {
         alert('Comment contains bad words. You have been banned');
