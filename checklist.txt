@@ -20,7 +20,12 @@ Funkcionalumas:
 [x]Banno pritaikymas vartotojui jeigu jis naudoja zodzius is banned saraso
 [x]Tikrinimas ar vartotojas banned po username submitinimo
 [x]Alertas banintam vartotojui su ispejimu kokiam laikui banas ir funkcionalumo nutraukimas
-[]
+-----------------------------------------------------------
+[x]Validatoriai
+  *Komentatoriaus varde gali buti tik raides nuo a iki z
+  *Komentatoriaus varda sudaro nuo 3 iki 10 raidziu
+  *Komentaro ilgis negali buti ilgesnis nei 255 simboliai
+  *Komentare negali buti naudojamos HTML israiskos
 []
 []
 []
